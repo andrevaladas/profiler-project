@@ -5,20 +5,21 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
- * Entidade padrão exemplo
+ * Activity Area Entity
  * 
  * @author Andre Valadas
  */
 @Entity
-public class Customer implements Serializable {
+@Table(name = "activity_area")
+public class ActivityArea implements Serializable {
 
-	private static final long serialVersionUID = 7666928870904385070L;
+	private static final long serialVersionUID = -1338918250487084452L;
 
-	@Id @GeneratedValue(strategy = GenerationType.AUTO)
+	@Id @GeneratedValue
 	private Long id;
 
 	@Column(nullable = false)
@@ -51,4 +52,5 @@ public class Customer implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
+
 }

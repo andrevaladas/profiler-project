@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.chronosystems.entity.util.Option;
-import com.chronosystems.entity.util.TypeaheadOption;
-import com.chronosystems.entity.util.TypeaheadValue;
+import com.chronosystems.util.autocomplete.Option;
+import com.chronosystems.util.autocomplete.TypeaheadOption;
+import com.chronosystems.util.autocomplete.TypeaheadValue;
 
 @Controller
 @RequestMapping

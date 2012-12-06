@@ -192,7 +192,7 @@
     <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
 	    <div class="modal-header">
 	      	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-	      	<h3 id="myModalLabel">Modal Heading</h3>
+	      	<h3 id="myModalLabel" align="center">Modal Heading</h3>
 	    </div>
 	    <div class="modal-body">
 	      	<h4>Text in a modal</h4>
@@ -234,6 +234,10 @@
 				$(this).datepicker('hide');
 			}
 		);
+		
+		$('#myModal').modal({
+			backdrop: 'static'
+		});
 
 		//$('.datepicker').inputmask();
 

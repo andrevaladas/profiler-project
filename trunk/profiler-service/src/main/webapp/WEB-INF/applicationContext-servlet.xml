@@ -53,10 +53,30 @@
 
 	<!-- Hibernate session factory -->
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">           
-    	<property name="dataSource" ref="dataSource"/>  
+    	<property name="dataSource" ref="dataSource"/>
 		<property name="annotatedClasses">
 			<list>
+				<value>com.chronosystems.entity.ActivityArea</value>
+				<value>com.chronosystems.entity.Business</value>
+				<value>com.chronosystems.entity.BusinessTemplateDetail</value>
+				<value>com.chronosystems.entity.Contact</value>
 				<value>com.chronosystems.entity.Customer</value>
+				<value>com.chronosystems.entity.User</value>
+
+				<!-- location -->
+				<value>com.chronosystems.entity.location.Address</value>
+				<value>com.chronosystems.entity.location.City</value>
+				<value>com.chronosystems.entity.location.Country</value>
+				<value>com.chronosystems.entity.location.District</value>
+				<value>com.chronosystems.entity.location.State</value>
+
+				<!-- template -->
+				<value>com.chronosystems.entity.template.GaleryImage</value>
+				<value>com.chronosystems.entity.template.PanoramicImage</value>
+				<value>com.chronosystems.entity.template.ServiceCategory</value>
+				<value>com.chronosystems.entity.template.Template</value>
+				<value>com.chronosystems.entity.template.TemplateCategory</value>
+				<value>com.chronosystems.entity.template.TemplateParameter</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
