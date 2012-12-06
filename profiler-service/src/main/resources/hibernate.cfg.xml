@@ -5,6 +5,27 @@
 <hibernate-configuration>
     <session-factory>
         <mapping class="com.chronosystems.entity.Customer"/>
+      	<mapping class="com.chronosystems.entity.ActivityArea"/>
+		<mapping class="com.chronosystems.entity.Business"/>
+		<mapping class="com.chronosystems.entity.BusinessTemplateDetail"/>
+		<mapping class="com.chronosystems.entity.Contact"/>
+		<mapping class="com.chronosystems.entity.Customer"/>
+		<mapping class="com.chronosystems.entity.User"/>
+
+		<!-- location -->
+		<mapping class="com.chronosystems.entity.location.Address"/>
+		<mapping class="com.chronosystems.entity.location.City"/>
+		<mapping class="com.chronosystems.entity.location.Country"/>
+		<mapping class="com.chronosystems.entity.location.District"/>
+		<mapping class="com.chronosystems.entity.location.State"/>
+
+		<!-- template -->
+		<mapping class="com.chronosystems.entity.template.GaleryImage"/>
+		<mapping class="com.chronosystems.entity.template.PanoramicImage"/>
+		<mapping class="com.chronosystems.entity.template.ServiceCategory"/>
+		<mapping class="com.chronosystems.entity.template.Template"/>
+		<mapping class="com.chronosystems.entity.template.TemplateCategory"/>
+		<mapping class="com.chronosystems.entity.template.TemplateParameter"/>
     </session-factory>
 	    
 </hibernate-configuration>

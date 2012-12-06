@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.chronosystems.entity.util;
+package com.chronosystems.util.autocomplete;
 
 
 /**

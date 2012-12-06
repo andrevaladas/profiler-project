@@ -1,28 +1,30 @@
-package com.chronosystems.entity;
+package com.chronosystems.entity.location;
 
 import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 /**
- * Entidade padrão exemplo
+ * District Entity
  * 
  * @author Andre Valadas
  */
 @Entity
-public class Customer implements Serializable {
+public class District implements Serializable {
 
-	private static final long serialVersionUID = 7666928870904385070L;
+	private static final long serialVersionUID = -5499023327948562650L;
 
-	@Id @GeneratedValue(strategy = GenerationType.AUTO)
+	@Id @GeneratedValue
 	private Long id;
-
 	@Column(nullable = false)
 	private String name;
+
+	@ManyToOne
+	private City city;
 
 	/**
 	 * @return the id
@@ -50,5 +52,19 @@ public class Customer implements Serializable {
 	 */
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	/**
+	 * @return the city
+	 */
+	public City getCity() {
+		return city;
+	}
+
+	/**
+	 * @param city the city to set
+	 */
+	public void setCity(City city) {
+		this.city = city;
 	}
 }
